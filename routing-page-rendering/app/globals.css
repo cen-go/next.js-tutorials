@@ -31,6 +31,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  border-bottom: 2px solid #bcbcb7;
 }
 
 #logo {
@@ -40,8 +41,7 @@ ul {
   font-weight: 800;
   letter-spacing: 0.3rem;
   color: #bcbcb7;
-  border: 1px solid #bcbcb7;
-  padding: 8px 16px;
+  padding: 4px 0 16px 0;
 }
 
 #main-header #logo a,
@@ -206,4 +206,13 @@ ul {
 
 a {
   color: rgb(67, 234, 234);
+}
+
+#error {
+  display: inline-block;
+  color: #ffe4e1;
+  border: 1px solid #ff4332;
+  padding: 0 24px;
+  border-radius: 8px;
+  background-color: #e76a5f1f;
 }
