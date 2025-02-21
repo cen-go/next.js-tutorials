@@ -1,14 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { DUMMY_NEWS } from "@/dummy-news";
+import { getAllNews } from "@/lib/news";
 
-export default function NewsPage() {
+export default async function NewsPage() {
+  const fetchedNews = await getAllNews();
+
   return (
     <main>
       <h1>Latest News</h1>
       <ul className="news-list">
-        {DUMMY_NEWS.map((news) => (
+        {fetchedNews.map((news) => (
           <li key={news.id}>
             <Link href={`/news/${news.slug}`}>
               <div className="news-grid-image">
