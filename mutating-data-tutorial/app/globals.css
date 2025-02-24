@@ -168,9 +168,13 @@ input[type=file]::file-selector-button {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-.post img {
+.post-image {
+  position: relative;
   width: 8rem;
   height: 6rem;
+}
+
+.post img {
   object-fit: cover;
 }
 

@@ -97,3 +97,9 @@ export async function updatePostLikeStatus(postId, userId) {
     return stmt.run(userId, postId);
   }
 }
+
+export function getPostsCount() {
+  const stmt = db.prepare(`
+    SELECT COUNT(id) AS count FROM  posts`);
+    return stmt.all();
+}
